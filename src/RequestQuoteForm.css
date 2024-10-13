@@ -1,0 +1,71 @@
+/* Button to toggle form visibility */
+.request-quote-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    top: 8%;
+  }
+  
+  /* Quote request form styling */
+  .quote-form {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+  }
+  
+  /* Form title */
+  .form-title {
+    margin-bottom: 20px;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Input fields */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Grocery item input */
+  .grocery-item {
+    margin: 10px 0;
+  }
+  
+  .quantity-input {
+    width: 100px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Submit button styling */
+  .submit-btn {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

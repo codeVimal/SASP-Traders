@@ -1,38 +1,116 @@
-.App {
+/* General body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header section */
+.head {
   text-align: center;
+  background-color: #ffffff; /* Darker shade of blueviolet */
+  color: rgb(155, 91, 239);
+  padding: 30px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Button to toggle form visibility */
+.buton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 12px 25px;
+  background-color: white;
+  color: #6a1b9a;
+  border: 2px solid #6a1b9a;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.buton:hover {
+  background-color: #6a1b9a;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Paragraph styling */
+.para {
+  text-align: center;
+  color: #6a1b9a;
+  font-size: 1.5rem;
+  margin: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Paragraph with white background */
+.para1 {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #6a1b9a;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+.img {
+  padding-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Grocery list image styles */
+.grocery-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grocery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Selected grocery overlay */
+.selected-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+/* Grocery list container */
+.grocery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Grocery item container */
+.grocery-item {
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
 }
